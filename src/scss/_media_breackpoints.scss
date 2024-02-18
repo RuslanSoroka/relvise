@@ -1,0 +1,23 @@
+@mixin desctop-hd() {
+    @media (max-width: $break-point-xxl) {
+        @content;
+    }
+}
+
+@mixin loptop() {
+    @media (max-width: $break-point-xl) {
+        @content;
+    }
+}
+
+@mixin tablet() {
+    @media (max-width: $break-point-md) {
+        @content;
+    }
+}
+
+@mixin mobile() {
+    @media (max-width: $break-point-sm) {
+        @content;
+    }
+}

@@ -1,0 +1,51 @@
+.achievements {
+    padding: 80px 0;
+    text-align: center;
+
+    &__header {
+        margin: 0 0 50px 0;
+    }
+
+    &__body {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -15px;
+        row-gap: 30px;
+    }
+
+    &__column {
+        padding: 0 15px;
+        flex: 0 1 25%;
+    }
+
+    &__item {
+        min-height: 100%;
+        padding: 30px;
+        background: var(--light-text-color);
+    }
+
+    @media (max-width: 865px) {
+        &__column {
+            flex: 0 1 50%;
+        }
+    }
+
+    @media (max-width: 587px) {
+        padding: 50px 0;
+        &__header {
+            margin: 0 0 30px 0;
+        }
+
+        &__body {
+            row-gap: 15px;
+        }
+
+        &__column {
+            flex: 0 1 100%;
+        }
+    }
+
+    @include mobile {
+        padding: 25px 0;
+    }
+}

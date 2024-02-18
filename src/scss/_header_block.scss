@@ -1,0 +1,22 @@
+.header-block {
+    &__title {
+        font-size: 40px;
+        line-height: 142%;
+        letter-spacing: 0.01em;
+        color: var(--text-color);
+        text-align: center;
+
+        &:not(:last-child) {
+            margin-bottom: 10px;
+        }
+    }
+
+    &__sub-title {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 143%;
+        letter-spacing: 0.01em;
+        text-align: center;
+        color: var(--second-text-color);
+    }
+}

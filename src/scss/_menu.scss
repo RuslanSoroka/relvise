@@ -1,0 +1,45 @@
+.menu {
+    padding: 5px 0;
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+
+        li:not(:last-child) {
+            padding-right: 30px;
+        }
+    }
+
+    &__link {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 171%;
+        letter-spacing: 0.01em;
+        text-align: center;
+        color: var(--second-text-color);
+
+        &:hover {
+            display: block;
+            transform: scaleX(1.1);
+        }
+    }
+
+    @include tablet {
+        .menu &__list li:not(:last-child) {
+            padding-right: 20px;
+        }
+
+        &__link {
+            font-size: 16px;
+        }
+    }
+
+    @include mobile {
+        .menu &__list li:not(:last-child) {
+            padding-right: 15px;
+        }
+
+        &__link {
+            font-size: 18px;
+        }
+    }
+}

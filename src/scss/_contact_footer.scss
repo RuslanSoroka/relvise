@@ -1,0 +1,44 @@
+.contact-footer {
+    display: flex;
+    flex-direction: column;
+
+    > *:not(:last-child) {
+        margin: 0 0 10px 0;
+    }
+
+    &__item {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 171%;
+        letter-spacing: 0.01em;
+        color: var(--light-text-color);
+        padding: 0 0 0 34px;
+        display: flex;
+        align-items: center;
+        min-height: 30px;
+        transition: all 0.3s ease 0s;
+
+        &:hover {
+            text-decoration: underline;
+            transform: scaleX(1.05);
+        }
+
+        &--phone {
+            background: url(../src/img/footer/icon/icn1.svg) left no-repeat;
+        }
+
+        &--adress {
+            background: url(../src/img/footer/icon/icn2.svg) left no-repeat;
+        }
+
+        &--email {
+            background: url(../src/img/footer/icon/icn3.svg) left no-repeat;
+        }
+    }
+
+    @include tablet {
+        &__item {
+            font-size: 20px;
+        }
+    }
+}
